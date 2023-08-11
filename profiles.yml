@@ -8,4 +8,4 @@ northwind:
       user: csdataanalytics
       password: *******
       database: csdataanalytics_db
-      schema: dw  # Adicione esta linha para especificar o esquema
+      schema: dw  
