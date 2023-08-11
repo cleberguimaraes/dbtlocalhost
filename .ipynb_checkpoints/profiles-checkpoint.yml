@@ -1,0 +1,11 @@
+northwind:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: postgresql-csdataanalytics.alwaysdata.net
+      port: 5432
+      user: csdataanalytics
+      password: "{{ env_var('CSDATAANALYTICS_DB_PASSWORD') }}"
+      database: csdataanalytics_db
+      schema: dw
