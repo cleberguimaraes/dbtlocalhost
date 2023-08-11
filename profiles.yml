@@ -6,6 +6,6 @@ northwind:
       host: postgresql-csdataanalytics.alwaysdata.net
       port: 5432
       user: csdataanalytics
-      password: rio@2023
+      password: *******
       database: csdataanalytics_db
       schema: dw  # Adicione esta linha para especificar o esquema
