@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: fact_order_details
+    columns:
+      - name: order_id
+        description: The order natural key
+        tests:
+          - not_null
+
+tests:
+  - relationships:
+      model: fact_order_details
+      tests:
+        - unique:
+            column: order_id
+            
+        - relationships:
+            - from: order_id
+              to: dim_customers.customer_fk
+
+        - relationships:
+            - from: product_fk
+              to: dim_products.products_sk 
+
+        - relationships:
+            - from: supplier_fk
+              to: dim_suppliers.suppliers_sk
+
+        - relationships:
+            - from: shipper_fk
+              to: dim_shippers.shippers_sk

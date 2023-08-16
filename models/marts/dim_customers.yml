@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_customers
+    columns:
+      - name: customers_sk
+        description: The primary key of the table customer
+        tests:
+          - unique
+          - not_null   

@@ -21,7 +21,7 @@ with
     )
     , orders_with_sk as (
         select 
-            orders.id as order_id
+            order_id
             , employees.employees_sk as employee_fk
             , customers.customers_sk as customer_fk
             , shippers.shippers_sk as shipper_fk
