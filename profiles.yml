@@ -6,11 +6,6 @@ northwind:
       host: postgresql-csdataanalytics.alwaysdata.net
       port: 5432
       user: csdataanalytics
-<<<<<<< HEAD
-      password: "{{ env_var('CSDATAANALYTICS_DB_PASSWORD') }}"
+      password: "rio@2023"  
       database: csdataanalytics_db
-      schema: dw
-=======
-      password: *******
-      database: csdataanalytics_db
-      schema: dw  
+      schema: dbt_northwind
