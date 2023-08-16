@@ -1,7 +1,7 @@
 with
     source as (
         select 
-          id
+          order_id
           ,  employee_id
           ,  customer_id
           ,  status_id
